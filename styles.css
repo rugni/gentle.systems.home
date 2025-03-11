@@ -16,20 +16,21 @@ body {
 }
 
 .item {
-    padding: 0 0 6px 0;
+    padding: 0 0 0 0;
 }
 
 
 .wordmark {
-    width: 185px;
+    width: 135px;
 }
 
 .symbol {
-    width: 81px;
+    width: 82px;
 }
 
 .coming {
     width: 116px;
+    padding: 4px 0 0 0;
 }
 
 
