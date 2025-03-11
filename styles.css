@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+    height: 80vh; /* Full viewport height */
     margin: 0;
     position: relative;
     background: #2B1703;
@@ -19,7 +19,6 @@ body {
     padding: 0 0 0 0;
 }
 
-
 .wordmark {
     width: 135px;
 }
@@ -33,17 +32,21 @@ body {
     padding: 4px 0 0 0;
 }
 
-
 img {
     width: inherit;
 }
 
 /* Desktop: Change to horizontal layout */
 @media (min-width: 1000px) {
+    body {
+        height: 100vh;
+    }
+
     .content {
       flex-direction: row; /* Switch to horizontal */
       gap: 115px; /* Space between items */
     }
+
     .wordmark {
         width: 269px;
     }
