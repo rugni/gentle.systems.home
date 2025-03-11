@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    position: relative;
+    background: #2B1703;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Default to vertical (mobile) */
+    align-items: center; /* Center items */
+    gap: 115px; /* Space between items */
+}
+
+.item {
+    padding: 0 0 6px 0;
+}
+
+.wordmark {
+    width: 269px;
+}
+
+.symbol {
+    width: 163px;
+    padding: 0;
+}
+
+.coming {
+    width: 231px;
+    padding: 0 0px 9px 2px;
+}
+
+
+img {
+    width: inherit;
+}
+
+/* Desktop: Change to horizontal layout */
+@media (min-width: 1000px) {
+    .content {
+      flex-direction: row; /* Switch to horizontal */
+    }
+  }
