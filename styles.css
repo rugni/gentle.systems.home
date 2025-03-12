@@ -1,11 +1,33 @@
 body {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 80vh; /* Full viewport height */
+    height: 90vh; 
     margin: 0;
     position: relative;
     background: #2B1703;
+    align-items: center; /* Center vertically */
+}
+
+.header {
+    display: flex;
+    background: rgb(214, 181, 82);
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.headertext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2B1703;
+    text-align: center;
+    margin: 0;
+}
+
+.wrapper {
+    height: 60vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .content {
@@ -36,9 +58,34 @@ img {
     width: inherit;
 }
 
-/* Desktop: Change to horizontal layout */
-@media (min-width: 1000px) {
-    body {
+/* tablet: display the symbols larger */
+@media (min-width: 768px) {
+    .wrapper {
+        height: 80vh;
+    }
+
+    .content {
+      flex-direction: column; 
+      gap: 86px; /* Space between items */
+    }
+
+    .wordmark {
+        width: 202px;
+    }
+    
+    .symbol {
+        width: 123px;
+    }
+    
+    .coming {
+        width: 173px;
+        padding: 6px 0px 0px 0px;
+    }
+  }
+
+  /* Desktop: Change to horizontal layout */
+@media (min-width: 1025px) {
+    .wrapper {
         height: 100vh;
     }
 
@@ -60,5 +107,4 @@ img {
         width: 231px;
         padding: 0 0px 9px 2px;
     }
-
   }
