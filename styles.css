@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Unica77";
+    src: url('fonts/Unica77LL-Regular.otf');
+}
+
 body {
     height: 90vh; 
     margin: 0;
@@ -8,18 +13,22 @@ body {
 
 .header {
     display: flex;
-    background: rgb(214, 181, 82);
+    background: #FFFFFF;
     text-align: center;
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.2rem;
+}
+
+.header :hover {
+    text-decoration: underline;
 }
 
 .headertext {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #2B1703;
-    text-align: center;
+    font-family: Unica77;
+    font-size: 14px;
+    color: #85827E;
     margin: 0;
 }
 
